@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To Do List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="oop.js">
+   </script>
+   <script>window.addEventListener("load", loadpage, false);</script>
+ 
+<style>
+#lbl{border-bottom: 1px solid black;}
+.mission{border: 1px solid black; width: 349px; border-top:none; overflow: auto;border-radius: 2px;}
+.newbtn{float: right;}
+#divMission{background-color: chartreuse; width: 350px; border-radius: 2px;}
+#divMission2{background-color: rgb(255, 207, 87); width:350px;border-radius: 2px; }
+#divMission3{background-color: rgb(241, 39, 3); width: 350px; border-radius: 2px;}
+#alldv{ display: flex;}
+#ekleme{ background-color: aqua; width: 240px; padding-left: 35px; padding-top: 15PX ; padding-bottom: 20PX; border-radius: 7px;}
+
+</style>
+</head> 
+<body>
+  <div id="alldv"> 
+    <div> 
+    <div id="ekleme">
+    <div>
+    <label> To Do </label><p>
+    <input type="text" maxlength="43" id="tdmssn" value=""/>
+    </div>
+
+    <div>
+    <label> İmportant Level </label><p>
+     
+    <input type="number"  min="1" max="3" id="nmbr" value=""/>
+    </div>   
+    <input type="button" value="Add" onclick="addmission()"/>
+  </div>
+  <h5>1: less important</h5>
+  <h5>2:  important</h5>
+  <h5>3: very important</h5>
+</div>
+
+  <div> <div id="divMission"><p id="lbl"> Less Important </p> </div></div>
+<div><div id="divMission2"><p id="lbl">Important </p></div>  </div>
+<div> <div id="divMission3"><p id="lbl">Very Important </p></div> </div>
+
+</div>
+</body>
+
+</html>  
